@@ -63,38 +63,5 @@
                 </div>
             </footer>
         </div>
-
-
-        <script type="text/javascript">
-
-        $('.submit').on('click', function (event) {
-            event.preventDefault();
-
-            var newReservation = {
-                customerName: $('#reserve-name').val().trim(),
-                phoneNumber: $('#reserve-phone').val().trim(),
-                customerEmail: $('#reserve-email').val().trim(),
-                customerID: $('reserve-id').val().trim()
-            };
-
-            console.log(newReservation);
-
-        $.post('/api/tables', newReservation, function (data) {
-            if (data) {
-                alert("You are booked for dinner!");
-            } else {
-                alert("You will be placed on the waiting list!");
-            }
-
-            $('#reserve-name').val("");
-            $('#reserve-phone').val("");
-            $('#reserve-email').val("");
-            $('#reserve-id').val("");
-
-        });
-    });
-        
-        </script>
-
     </body>
 </html>
