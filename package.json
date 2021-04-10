@@ -1,0 +1,23 @@
+{
+  "name": "secrets-cuisine-app",
+  "version": "1.0.0",
+  "description": "Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has 5 tables available. First five requests get a reservations, every request after that is sent to the waiting list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitighe1/secrets_cuisine_app.git"
+  },
+  "author": "Caitlin Tighe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caitighe1/secrets_cuisine_app/issues"
+  },
+  "homepage": "https://github.com/caitighe1/secrets_cuisine_app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
